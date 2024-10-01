@@ -1,0 +1,16 @@
+body{
+    background-color: cornflowerblue;
+}
+
+div p {
+    background-color: rgb(183, 0, 255);
+  }
+div > p {
+    background-color: chartreuse;
+  }
+div + p {
+    background-color: rgb(21, 139, 160);
+  }
+div ~ p {
+    background-color: beige;
+  }
