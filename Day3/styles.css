@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: beige;
+}
+
+.fitems{
+    background-color: violet;
+    border: 5px solid yellow;
+    padding: 40px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
