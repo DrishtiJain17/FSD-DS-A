@@ -1,0 +1,142 @@
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Light background for the whole container */
+    border-radius: 8px; /* Rounded corners for the container */
+  }
+  
+  .jumbotron {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    background-color: #6c757d; /* Dark grey background for the jumbotron */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem; /* Slightly larger font size for the title */
+  }
+  
+  .logout-link a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: darkred;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logout-link a:hover {
+    background-color: #a00000;
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+  }
+  
+  .welcome-section h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  
+  .weather-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for weather section */
+  }
+  
+  .weather-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .weather-input {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .weather-input:focus {
+    outline: none;
+    border-color: #4CAF50; /* Highlight input field on focus */
+  }
+  
+  .fetch-weather-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .fetch-weather-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+  }
+  
+  .fetch-weather-button:active {
+    background-color: #388e3c; /* Darker green when button is pressed */
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .weather-info p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+  
+  .text-danger {
+    color: red;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 15px;
+    }
+  
+    .jumbotron {
+      padding: 20px;
+    }
+  
+    .header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .fetch-weather-button {
+      font-size: 14px;
+      padding: 10px 18px;
+    }
+  
+    .weather-input {
+      width: 180px;
+    }
+  }
+  

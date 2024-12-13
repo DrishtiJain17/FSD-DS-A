@@ -9,7 +9,6 @@ const App = () => {
   const [data,setData] = useState();
   return (
     <div>
-      {JSON.stringify(data)}
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainLayout/>}>
@@ -17,8 +16,7 @@ const App = () => {
           <Route path='/register' element={<Register regData={setData}/>}/>
         </Route>
         <Route path='/dashboard' element={<DashBoard regDash={data}/>}/>
-        <Route path='/logout' element={<Logout/>}/>
-
+        <Route path='/logout' element={<Logout regLog={setData}/>}/>
       </Routes>
       </BrowserRouter>
     </div>
